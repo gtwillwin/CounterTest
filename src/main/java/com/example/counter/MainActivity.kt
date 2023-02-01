@@ -8,6 +8,12 @@ import java.awt.font.TextAttribute
 
 class MainActivity : AppCompatActivity() {
     private var count = 0
+    val doublebtn = findViewById<Button>(R.id.doublebtn)
+ 
+        doublebtn.setOnClickListener {
+            count = count * 2
+            counter.text = """${count}"""
+        }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
